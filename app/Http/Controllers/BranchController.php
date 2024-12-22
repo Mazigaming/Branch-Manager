@@ -10,33 +10,33 @@ class BranchController extends Controller
     }
 
     public function store(Request $request) {
-        $branch = Branch::create($request->validate(['name' => 'required|string|max:255']));
+        $branch = Branch::create(['name' => $request->name]);
         $branch->leaves()->create(['value' => $request->leaf]);
-        return back()->with('success', 'Branch created');
+        return back()->with('success', 'Done');
     }
 
     public function update(Request $request, $id) {
-        Branch::findOrFail($id)->update($request->validate(['name' => 'required|string|max:255']));
-        return back()->with('success', 'Branch updated');
+        Branch::findOrFail($id)->update(['name' => $request->name]);
+        return back()->with('success', 'Done');
     }
 
     public function destroy($id) {
         Branch::findOrFail($id)->delete();
-        return back()->with('success', 'Branch deleted');
+        return back()->with('success', 'Done');
     }
 
     public function addLeaf(Request $request, $id) {
-        Branch::findOrFail($id)->leaves()->create($request->validate(['value' => 'required|string|max:255']));
-        return back()->with('success', 'Leaf added');
+        Branch::findOrFail($id)->leaves()->create(['value' => $request->leaf]);
+        return back()->with('success', 'Done');
     }
 
     public function deleteLeaf($id) {
         Leaf::findOrFail($id)->delete();
-        return back()->with('success', 'Leaf deleted');
+        return back()->with('success', 'Done');
     }
 
     public function moveLeaf(Request $request, $id) {
         Leaf::findOrFail($id)->update(['branch_id' => $request->target_branch]);
-        return back()->with('success', 'Leaf moved');
+        return back()->with('success', 'Done');
     }
 }

@@ -8,7 +8,7 @@ Prosty open source Menager Struktury Drzewiastej - A simple open-source Tree Str
 - Add and organize leaves within branches
 - Move leaves between branches
 - Search functionality
-- Modern, responsive interface
+- Responsive interface
 - Real-time updates
 
 ## Technologies
@@ -50,12 +50,10 @@ npm run dev
 
 ## Usage
 
-1. Create a new branch
+1. Create a branch
 2. Add leaves to branches
 3. Move leaves between branches
-4. Search through branches and leaves
-5. Delete branches or leaves as needed
+4. Search through branches and leaves (kinda buggy)
+5. Delete branches or leaves
 
-## License
 
-Open-source software licensed under the MIT license.

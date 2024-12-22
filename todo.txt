@@ -1,0 +1,24 @@
+TODO List dla Branch Manager
+
+- Dodanie Funkcji Administratora
+
+- Dodanie Panelu Administratora
+
+- System Logowania
+
+- Odróżnienie strony uzytkownika i administratora dla lepszego wglądu obsługi
+
+- 2FA weryfikacja
+
+- Dodanie stanu frontendowego
+
+- Api do stron dla łatwiejszej osbsługi programu
+
+- Dodanie funkcji wysyłania i zczytywanie plików ala Dropbox
+
+- Możliwość zbiernia IP użytkowników dla lepszego zabezpieczenia jeśli 2fa nie jest możliwe
+
+- Prosty hosting
+
+
+
